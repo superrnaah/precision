@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Precision Die & Engraving</title>
 </head>
 <body>
@@ -35,13 +36,25 @@
     <!-- menu nav -->
 
     <div class="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/orderform.html">Order Form</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-        </ul>
-    </div>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button>Order Form</button>
+        <div class="dropdown-menu information-grid">
+            <div class="order-links">
+            <a href="">English</a>
+            <a href="">Spanish</a>
+        </div>
+        </div>
+        </div>
+    </ul>
+</div>
+
+
+
+            
     <script>
         const menuToggle = document.querySelector ('.toggle')
         const showcase = document.querySelector ('.showcase')

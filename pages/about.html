@@ -37,9 +37,7 @@
     </section>
 
 <section class="products">
-    <div class="overlay2">
-
-    </div>
+    
     <div class="bodytext">
         <h1>products & services</h1>
         <p>we offer a wide variety of tooling solutions for your printing needs</p>
@@ -69,14 +67,25 @@
 
 <!-- menu nav -->
 
-    <div class="menu">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="orderform.html">Order Form</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
+<div class="menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+        <div class="dropdown">
+            <button class="link">Order Form</button>
+        <div class="dropdown-menu">
+            English
+            Spanish
+        </div>
+        </div>
+    </ul>
+</div>
+
+
+
+        
+        
     <script>
         const menuToggle = document.querySelector ('.toggle')
         const showcase = document.querySelector ('.showcase')

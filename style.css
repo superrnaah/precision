@@ -131,35 +131,92 @@ justify-content: space-between;
     color: #d91e18;
 }
 
-.menu {
+.menu  {
     position: absolute;
     top: 0;
     right: 0;
     width: 300px;
     height: 100%;
     background: #111;
-    padding: 1em;
+    padding: 2em;
+    text-align: right;
+    display: block;
+    align-items: baseline;
+    line-height: 3em;
 }
 
 .menu ul {
     position: relative;
     list-style: none;
-    margin-top: 5em;
+    margin-top: 3em;
 }
+
 
 .menu ul li a {
     text-decoration: none;
     font-size: 1.6em;
     color:aliceblue;
-    display: block;
-    padding: .5em;
-    text-align: right;
 }
 
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: aliceblue;
+  font-size: 1.6em;
+  padding: 0;
+}
+
+.dropdown.active > .link,
+.link:hover {
+  color: #d91e18;
+}
 .menu ul li a:hover {
     color: #d91e18;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 12px;
+  top: calc(100% + .25em);
+  color: #111;
+  background-color: aliceblue;
+  padding: .35rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.information-grid {
+  left: 6em;
+  width: 9em;
+  text-align: center;
+}
+
+.order-links a {
+  display: grid;
+  gap: 2em;
+  line-height: 2em;
+  padding: 1em;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 600;
+  color: #d91e18;
+  text-decoration: none;
+}
 /* about css */
 /* about css */
 /* about css */
@@ -296,26 +353,14 @@ justify-content: space-between;
 
 .products {
   position: absolute;
-  top: 70em;  
+  top: 55em;  
   right: 0;
-  min-height: 100vh;
-    padding: 100px;
+  height: 100%;
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 100px;
     background-color: #111;
     color: white;
-}
-
-.overlay2 {
-  position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #111;
-    opacity: .95;
 }
 
 .bodytext {
@@ -338,6 +383,8 @@ justify-content: space-between;
 
 .productshow {
   position: absolute;
+  top: 0;
+  left: 0;
   margin-top: 15em;
   display: flex;
   flex-direction: row;
@@ -357,7 +404,7 @@ justify-content: space-between;
   height: 372px;
 }
 
-@media(max-width: 798px) {
+@media(max-width: 2106px) {
     .showcase, .showcase header {
         padding: 40px;
     }
@@ -369,4 +416,20 @@ justify-content: space-between;
         font-size: 2em;
     }
 
+    .productshow {
+      margin-top: 25em;
+      flex-wrap: nowrap;
+      gap: 3em;
+    }
+
+    .productshow ul {
+      padding-left: 3em;
+      font-size: 20px;
+      line-height: 4.5em;
+    }
+
+    .productimages {
+      position: relative;
+      left: 2em;
+    }
 }
