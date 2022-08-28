@@ -356,17 +356,16 @@ justify-content: space-between;
   top: 55em;  
   right: 0;
   height: 100%;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: #111;
-    color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #111;
+  color: white;
 }
 
 .bodytext {
   position: relative;
   margin: auto;
-  bottom: 15em;
   text-align: center;
 }
 
@@ -383,9 +382,8 @@ justify-content: space-between;
 
 .productshow {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 15em;
+  margin-top: 50em;
+  margin-left: 12em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -402,6 +400,120 @@ justify-content: space-between;
 .productimages {
   width: 588px;
   height: 372px;
+}
+
+/* CONTACT CSS */
+
+
+.map-responsive {
+  z-index: 1001;
+  overflow: hidden;
+}
+
+.map-responsive iframe {
+  padding-top: 5em;
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+}
+
+.contact-grid {
+  margin: auto;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  padding-left: 25em;
+  padding-right: 25em;
+  justify-content: space-around
+}
+
+.contact-info {
+  color: aliceblue;
+  text-align: left; 
+}
+
+.contact-info h1 {
+  color: #d91e18;
+  font-size: 3em;
+}
+
+.highlights {
+color: #d91e18;
+font-weight: 700;
+}
+
+
+.input-block {
+  background-color: rgba(white, 0,0,.8);
+  border: solid 1px #d91e18;
+  margin-bottom: 20px;
+  position: relative;
+  height: 60px;
+  width: 100%;
+  padding: 25px;
+}
+
+.input-block:focus {
+  border: solid 1px darken(#d91e18, 10%);
+}
+
+label {
+  text-transform: uppercase;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  display: block;
+  margin: 0;
+  font-weight: 300;
+  z-index: 1;
+  color: $secondary-color;
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.form-control {
+  background: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  color: #333;
+  resize: none;
+}
+
+textarea {
+  height: auto;
+}
+
+.square-button{
+  margin-top: 10px;
+  background-color: rgba(white, .8);
+  color:#d91e18;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 2px;
+  transition: all .5s;
+  padding: 0 60px;
+  height: 60px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  
+}
+
+.square-button:hover {
+color: white;
+background-color: #d91e18;
 }
 
 @media(max-width: 2106px) {
