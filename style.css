@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
+@import "compass";
 
 * {
     box-sizing: border-box;
@@ -447,6 +448,8 @@ font-weight: 700;
 }
 
 
+
+
 .input-block {
   background-color: rgba(white, 0,0,.8);
   border: solid 1px #d91e18;
@@ -458,22 +461,23 @@ font-weight: 700;
 }
 
 .input-block:focus {
-  border: solid 1px darken(#d91e18, 10%);
+  font-size: 5px;
 }
 
 label {
   text-transform: uppercase;
   position: absolute;
-  left: 25px;
-  top: 25px;
+  left: 15px;
+  top: 10px;
   display: block;
   margin: 0;
   font-weight: 300;
   z-index: 1;
-  color: $secondary-color;
   font-size: 18px;
   line-height: 10px;
 }
+
+
 
 .form-control {
   background: transparent;
@@ -485,16 +489,22 @@ label {
   position: relative;
   z-index: 2;
   font-size: 18px;
-  color: #333;
+  color: #fff;
   resize: none;
+  outline: none;
 }
 
-textarea {
+.form-control:focus {
+  top: 0;
+  border: #d91e18;
+  background: transparent;
+}
+
+.textarea {
   height: auto;
 }
 
 .square-button{
-  margin-top: 10px;
   background-color: rgba(white, .8);
   color:#d91e18;
   font-size: 26px;
@@ -503,12 +513,11 @@ textarea {
   text-align: center;
   border-radius: 2px;
   transition: all .5s;
-  padding: 0 60px;
+  padding: 0;
   height: 60px;
   border: none;
   width: 100%;
   cursor: pointer;
-  
 }
 
 .square-button:hover {
