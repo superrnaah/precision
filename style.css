@@ -405,6 +405,18 @@ justify-content: space-between;
 
 /* CONTACT CSS */
 
+.overlay2 {
+  background-color: #d91e18;
+  mix-blend-mode:hue;
+  position: absolute;
+  z-index: 1002;
+  width: 100%;
+  height: 35%;
+  bottom: 2em;
+  left: 0;
+  padding-top: 5em;
+  pointer-events: none;
+}
 
 .map-responsive {
   z-index: 1001;
@@ -415,7 +427,7 @@ justify-content: space-between;
   padding-top: 5em;
   left: 0;
   bottom: 0;
-  height: 50%;
+  height: 45%;
   width: 100%;
   position: absolute;
 }
