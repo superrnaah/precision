@@ -466,7 +466,6 @@ font-weight: 700;
 
 
 .input-block {
-  /* background-color: rgba(white, 0,0,.8); */
   border: solid 1px #d91e18;
   margin-bottom: 20px;
   position: relative;
@@ -518,7 +517,6 @@ label {
 }
 
 .square-button{
-  background-color: rgba(white, .8);
   color:#d91e18;
   font-size: 26px;
   text-transform: uppercase;
