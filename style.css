@@ -466,7 +466,7 @@ font-weight: 700;
 
 
 .input-block {
-  background-color: rgba(white, 0,0,.8);
+  /* background-color: rgba(white, 0,0,.8); */
   border: solid 1px #d91e18;
   margin-bottom: 20px;
   position: relative;
@@ -511,7 +511,6 @@ label {
 
 .form-control:focus {
   top: 0;
-  /* background: transparent; */
 }
 
 .textarea {
