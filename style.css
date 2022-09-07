@@ -640,29 +640,43 @@ background-color: #d91e18;
       height: 64px;
     }
     
+  
     .showcase header {
       padding: 2em;
     }
-  
+
+  .aboutimg {
+    object-fit: cover;
+  }
 
   .abouttext {
     font-size: 4px;
   }
 
   .abouttext h2 {
+    position: relative;
     line-height: 1.5em;
+    bottom: 5em;
   }
 
   .abouttext p {
+    position: relative;
     line-height: 1.5em;
+    top: 8em;
   }
 
   .bodytext {
     padding: 0 5em;
     font-size: 6px;
+    bottom: 5em;
   }
 
-  
+  .productshow {
+    font-size: 7px;
+    left: -20px;
+    top: 35em;
+  }
+
 .productimages {
   width: 239px;
   height: 139px;
@@ -683,7 +697,7 @@ background-color: #d91e18;
 .contact-wrap {
   position: relative;
   right: 30em;
-  top: 15em;
+  top: 13em;
   width: 20em;
 }
 
@@ -696,3 +710,4 @@ background-color: #d91e18;
   height: 75%;
   top: 41em;
 }
+  }
