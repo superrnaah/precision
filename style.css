@@ -536,7 +536,8 @@ label {
 }
 
 .contact-wrap {
-  z-index: 1005;
+  z-index: 1001;
+  background-color: #111;
 }
 
 .square-button:hover {
