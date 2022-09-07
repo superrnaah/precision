@@ -502,7 +502,7 @@ label {
   box-shadow: none;
   height: auto;
   position: relative;
-  z-index: 2;
+  z-index: 1002;
   font-size: 18px;
   color: #fff;
   resize: none;
@@ -511,8 +511,7 @@ label {
 
 .form-control:focus {
   top: 0;
-  border: #d91e18;
-  background: transparent;
+  /* background: transparent; */
 }
 
 .textarea {
