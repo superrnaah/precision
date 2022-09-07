@@ -662,7 +662,7 @@ background-color: #d91e18;
   .abouttext h2 {
     position: relative;
     line-height: 1.5em;
-    bottom: 5em;
+    bottom: 2em;
   }
 
   .abouttext p {
@@ -711,7 +711,8 @@ background-color: #d91e18;
 
 
   .overlay2 {
-    top: 63em;
+    display: none;
+    /* top: 63em; */
   }
 
 .map-responsive iframe {
