@@ -629,6 +629,8 @@ background-color: #d91e18;
 
 }
 
+
+
   @media(max-width: 414px) {
     .text {
       font-size: 10px;
@@ -666,19 +668,21 @@ background-color: #d91e18;
   .abouttext p {
     position: relative;
     line-height: 1.5em;
-    top: 8em;
   }
 
   .bodytext {
     padding: 0 5em;
     font-size: 6px;
-    bottom: 5em;
+    top: 3em;
   }
 
+  .products {
+    height: 850px;
+  }
   .productshow {
     font-size: 7px;
     left: -20px;
-    top: 35em;
+    top: 45em;
   }
 
 .productimages {
@@ -714,4 +718,5 @@ background-color: #d91e18;
   height: 75%;
   top: 41em;
 }
+
   }
