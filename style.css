@@ -646,7 +646,10 @@ background-color: #d91e18;
       height: 64px;
     }
     
-  
+    .showcase {
+      background-color: #111;
+    }
+
     .showcase header {
       padding: 2em;
     }
