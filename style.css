@@ -596,14 +596,14 @@ background-color: #d91e18;
     height: 172px;
   }
 
-  .map-responsive {
+  /* .map-responsive {
     overflow: auto;
-  }
+  } */
   
   .map-responsive iframe {
     padding-top: 15em;
     height: 50%;
-    overflow: visible;
+    /* overflow: visible; */
   }
 
   .contact-info {
