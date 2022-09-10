@@ -414,17 +414,16 @@ justify-content: space-between;
   background-color: #d91e18;
   mix-blend-mode:hue;
   position: absolute;
-  z-index: 1002;
+  z-index: 1;
   width: 100%;
-  height: 35%;
-  bottom: 2em;
+  height: 27.5%;
+  bottom: 1px;
   left: 0;
   padding-top: 5em;
   pointer-events: none;
 }
 
 .map-responsive {
-  z-index: 1001;
   overflow: hidden;
 }
 
@@ -486,7 +485,6 @@ label {
   display: block;
   margin: 0;
   font-weight: 300;
-  z-index: 1;
   font-size: 18px;
   line-height: 10px;
 }
@@ -501,7 +499,6 @@ label {
   box-shadow: none;
   height: auto;
   position: relative;
-  z-index: 1002;
   font-size: 18px;
   color: #fff;
   resize: none;
@@ -531,9 +528,7 @@ label {
   cursor: pointer;
 }
 
-.contact-wrap {
-  z-index: 1001;
-}
+
 
 .square-button:hover {
 color: white;
