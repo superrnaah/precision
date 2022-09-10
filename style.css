@@ -711,6 +711,7 @@ background-color: #d91e18;
   }
 
 .map-responsive iframe {
+  display: none;
   height: 75%;
   top: 41em;
   background-color: #111;
