@@ -189,7 +189,7 @@ justify-content: space-between;
   right: 12px;
   top: calc(100% + .25em);
   color: #111;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   padding: .35rem;
   border-radius: .25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
@@ -596,14 +596,14 @@ background-color: #d91e18;
     height: 172px;
   }
 
-  /* .map-responsive {
+  .map-responsive {
     overflow: auto;
-  } */
+  }
   
   .map-responsive iframe {
     padding-top: 15em;
     height: 50%;
-    /* overflow: visible; */
+    overflow: visible;
   }
 
   .contact-info {
@@ -713,7 +713,6 @@ background-color: #d91e18;
 .map-responsive iframe {
   height: 75%;
   top: 41em;
-  background-color: #111;
 }
 
   }
