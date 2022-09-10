@@ -706,12 +706,11 @@ background-color: #d91e18;
 
 
   .overlay2 {
-    display: none;
-    /* top: 63em; */
+    height: 65%;
+    bottom: -27em;
   }
 
 .map-responsive iframe {
-  display: none;
   height: 75%;
   top: 41em;
   background-color: #111;
