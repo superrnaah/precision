@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <title>Precision Die & Engraving</title>
+</head>
+<body>
+    
+    <section class="showcase">
+        <header>
+            <a href="../index.html" class="logo"><img src="../assets/Asset 2.webp" alt=""></a>
+            <div class="toggle"></div>
+        </header>
+            
+            <div class="overlay2"></div>
+
+           <div class="map-responsive">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.5123420144955!2d-117.61107107074042!3d34.04260471005635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c334e8e7cd8b9d%3A0xc3ec100388f05fa0!2s1701%20S%20Vineyard%20Ave%2C%20Ontario%2C%20CA%2091761!5e0!3m2!1sen!2sus!4v1661633482631!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+        
+
+        <div class="contact-grid">
+       <div class="contact-info">
+       <h1>Contact Us</h1>
+       <p>Precision Die Engraving</p>
+       <p>1701 S Vineyard Ave Suite J, Ontario, CA 91761</p>
+        <p><span class="highlights">Phone:</span> (909) 913-6031</p>
+        <p><span class="highlights">Email:</span> navo@precisiondieengraving.com</p>
+    </div>
+    <div class="contact-wrap">
+    <form action="https://formsubmit.co/andrew@dreamerdigital.net" method="POST" class="contact-form">
+        <div class="input-block">
+        <label for="name">Name</label>
+        <input type="text" required="required" class="form-control">
+        </div>
+        <div class="input-block">
+        <label for="email">Email</label>
+        <input type="text" required="required" class="form-control">
+        </div>
+        <div class="input-block textarea">
+        <label for="">Input your message here</label>
+        <textarea rows="3" type="text" required="required" class="form-control"></textarea>    
+        </div>
+        <button class="square-button">Send</button>
+    </div>
+    </div>
+
+    </section>
+
+<!-- menu nav -->
+
+    <div class="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <div class="dropdown" data-dropdown>
+                <button class="link" data-dropdown-button>Order Form</button>
+            <div class="dropdown-menu information-grid">
+            <div class="order-links">
+                <a  target="_blank" href="https://drive.google.com/file/d/1OQ2wwncNShcazpZryYz8GQZEaEgdoBFw/view?usp=sharing">English</a>
+                <a href="">Spanish</a>
+            </div>
+        </div>
+            </div>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector ('.toggle')
+        const showcase = document.querySelector ('.showcase')
+
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+
+        })
+    </script>
+</body>
+</html>

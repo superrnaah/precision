@@ -559,10 +559,17 @@ ul {
 
 @media(max-width: 1332px) {
 .contact-grid {
-  width: clamp(15%,55vw,100%);
+  position: absolute;
+  width: clamp(5%,55vw,100%);
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  /* justify-content: center; */
+  padding-right: 12em;
+  top: 10em;
+  
+}
+
+.contact-wrap {
+  
 }
 
 .contact-info {
@@ -575,6 +582,7 @@ ul {
 }
 
 .overlay2 {
+  display: none;
   top: 72em;
   width: 100%;
 }
