@@ -12,14 +12,16 @@
 
 body {
   overflow-x: hidden;
+  background-color: #111;
 }
+
+
 
 .showcase {
     position: absolute;
     right: 0;
     width: 100%;
-    min-height: 100vh;
-    padding: 100px;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +35,10 @@ body {
     right: 300px;
 }
 
-
+img {
+  position: relative;
+  width: clamp(150px, 75%, 700px);
+}
 
 .showcase header {
 position: absolute;
@@ -95,11 +100,12 @@ justify-content: space-between;
 .text {
     position: relative;
     z-index: 10;
+    padding: 2em;
 }
 
 .text h2 {
     color: #d91e18;
-    font-size: 5em;
+    font-size: clamp(3rem, 5vw,5em);
     font-weight: 800;
     line-height: 1em;
     max-width: 20em;
@@ -107,7 +113,7 @@ justify-content: space-between;
 }
 
 .text p {
-    font-size: 4em;
+    font-size: clamp(2em, 4vw,3.5em);
     font-weight: 600;
     line-height: 1em;
     text-transform: uppercase;
@@ -189,7 +195,7 @@ justify-content: space-between;
   right: 12px;
   top: calc(100% + .25em);
   color: #111;
-  /* background-color: aliceblue; */
+  background-color: aliceblue;
   padding: .35rem;
   border-radius: .25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
@@ -231,6 +237,7 @@ justify-content: space-between;
 
 .aboutimg {
     position: absolute;
+    object-fit: cover;
     top: 0;
     left: 0;
     height: 100%;
@@ -240,13 +247,15 @@ justify-content: space-between;
 
 .abouttext {
     position: relative;
-    margin: auto;
     text-align: center;
     z-index: 10;
+    padding: 2em;
+    max-height: 10%;
+    bottom: 8em;
 }
 
 .abouttext h2 {
-    font-size: 5em;
+    font-size: clamp(2rem, 5vw,4em);
     font-weight: 800;
     line-height: 1em;
     max-width: 30em;
@@ -255,7 +264,7 @@ justify-content: space-between;
 
 .abouttext p {
     color: #d91e18;
-    font-size: 4em;
+    font-size: clamp(1.5em, 4vw,3em); 
     font-weight: 600;
     line-height: 1em;
     text-transform: uppercase;
@@ -357,56 +366,54 @@ justify-content: space-between;
 
 .products {
   position: absolute;
-  top: 62em;  
+  top: 62em;
   right: 0;
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
-  width: 100%;
   background-color: #111;
   color: white;
 }
 
 .bodytext {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25em;
+  margin: auto;
+  bottom: 25em;
   text-align: center;
+  padding: 0 3em;
 }
 
 .bodytext h1 {
-  font-size: 5em;
+  font-size: clamp(2rem, 5vw,4em);
   text-transform: uppercase;
   color: #d91e18;
 } 
 
 .bodytext p {
-  font-size: 2em;
+  font-size: clamp(1rem, 5vw,1.5em);
   text-transform: uppercase;
 }
 
 .productshow {
   position: absolute;
-  margin-top: 30em;
-  margin-left: 12em;
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  gap: 10em;
+  gap: 5em;
+  margin-left: 4em;
+  padding: 0 3em;
+  width: clamp(25%, 100%);
 }
 
 .productshow ul {
   text-transform: uppercase;
-  font-size: 1.5em;
-  line-height: 3em;
+  font-size: clamp(1em, 3vw,1.5em);
+  line-height: 2em;
 }
 
-.productimages {
-  width: 588px;
-  height: 372px;
-}
+
 
 /* CONTACT CSS */
 
@@ -415,42 +422,41 @@ justify-content: space-between;
   mix-blend-mode:hue;
   position: absolute;
   z-index: 1;
-  width: 100%;
-  height: 27.5%;
-  bottom: 1px;
+  width: 50%;
+  height: 65%;
+  top: 25em;
   left: 0;
-  padding-top: 5em;
+  padding-top: 10em;
   pointer-events: none;
 }
 
-.map-responsive {
-  overflow: hidden;
-}
+
 
 .map-responsive iframe {
-  padding-top: 5em;
-  left: 0;
-  bottom: 0;
-  height: 45%;
-  width: 100%;
+  padding-top: 10em;
+  height: 100%;
+  width: 50%;
   position: absolute;
+  top: 7.5em;
 }
 
+
+
 .contact-grid {
-  margin: auto;
   position: absolute;
   display: flex;
-  width: 100%;
+  right: 0;
+  flex-direction: column;
   height: 50%;
-  left: 0;
-  padding-left: 25em;
-  padding-right: 25em;
+  padding-right: 15em;
+  padding-top: 25em;
   justify-content: space-around
 }
 
 .contact-info {
   color: aliceblue;
   text-align: left; 
+  margin-bottom: 4em;
 }
 
 .contact-info h1 {
@@ -462,6 +468,7 @@ justify-content: space-between;
 color: #d91e18;
 font-weight: 700;
 }
+
 
 
 .input-block {
@@ -536,183 +543,43 @@ background-color: #d91e18;
 }
 
 
-@media(max-width: 1920px) {
+@media(max-width: 1224px) {
   
-.text {
-  top: 5em;
+.productshow {
+flex-direction: column;
+top: 15em;
+margin: auto;
 }
 
-.abouttext {
-  top: 5em;
-  font-size: 12px;
+ul {
+  text-align: center;
 }
-
-  .products {
-    top: 57em
-  }
-
-  .bodyttext {
-    top: -11em
-  }
-  .productshow {
-    gap: 3em;
-    margin-top: 25em;
-    margin-left: 6em;
-  }
-
-  .contact-grid {
-  margin-left: 0;
-  margin-right: 0;
-  }
-  .map-responsive iframe {
-    padding-top: 10em;
-  }  
-}
-
-@media(max-width: 1366px) {
-
-  .text {
-    top: 5em;
-  }
-
-  .products {
-    top: 40em;
-  }
-
-
-  .bodytext {
-    font-size: 12px;
-  }
-
-  .productshow {
-    font-size: 12px;
-    display: grid;
-    left: 25em;
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .productimages {
-    width: 388px;
-    height: 172px;
-  }
-
-  .map-responsive {
-    overflow: auto;
-  }
-  
-  .map-responsive iframe {
-    padding-top: 15em;
-    height: 50%;
-    overflow: visible;
-  }
-
-  .contact-info {
-    position: relative;
-    right: 5em;
-    top: 2em;
-  }
-
-  .contact-form {
-    left: 10em;
-    top: 2em;
-    position: relative;
-  }
 
 }
 
-
-
-  @media(max-width: 414px) {
-    .text {
-      font-size: 10px;
-    }
-
-    .logo {
-      width: 155px;
-      height: 64px;
-    }
-
-    img {
-      width: 155px;
-      height: 64px;
-    }
-    
-    .showcase {
-      background-color: #111;
-    }
-
-    .showcase header {
-      padding: 2em;
-    }
-
-  .aboutimg {
-    object-fit: cover;
-  }
-
-  .abouttext {
-    font-size: 4px;
-  }
-
-  .abouttext h2 {
-    position: relative;
-    line-height: 1.5em;
-    bottom: 2em;
-  }
-
-  .abouttext p {
-    position: relative;
-    line-height: 1.5em;
-  }
-
-  .bodytext {
-    padding: 0 5em;
-    font-size: 6px;
-    top: 3em;
-  }
-
-  .products {
-    height: 850px;
-    background-color: #111;
-  }
-  .productshow {
-    font-size: 7px;
-    left: -20px;
-    top: 45em;
-  }
-
-.productimages {
-  width: 239px;
-  height: 139px;
-}
-
+@media(max-width: 1332px) {
 .contact-grid {
-  padding-right: 0;
-  padding-left: 23em;
-  }
+  width: clamp(15%,55vw,100%);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 
 .contact-info {
-  position: relative;
   text-align: center;
-  right: 30px;
-  top: -2em;
 }
-
-.contact-wrap {
-  position: relative;
-  right: 30em;
-  top: 13em;
-  width: 20em;
-}
-
-
-  .overlay2 {
-    height: 65%;
-    bottom: -27em;
-  }
 
 .map-responsive iframe {
-  height: 75%;
-  top: 41em;
+  top: 55em;
+  width: 100%;
 }
 
-  }
+.overlay2 {
+  top: 72em;
+  width: 100%;
+}
+
+}
+
+
+  
