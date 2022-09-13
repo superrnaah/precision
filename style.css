@@ -252,6 +252,7 @@ justify-content: space-between;
     padding: 2em;
     max-height: 10%;
     bottom: 8em;
+    margin: 0 auto;
 }
 
 .abouttext h2 {
@@ -374,6 +375,8 @@ justify-content: space-between;
   align-items: center;
   background-color: #111;
   color: white;
+  padding-top: 10em;
+  /* padding-bottom: 10em; */
 }
 
 .bodytext {
@@ -403,7 +406,7 @@ justify-content: space-between;
   align-items: center;
   gap: 5em;
   margin-left: 4em;
-  padding: 0 3em;
+  padding: 10em 3em;
   width: clamp(25%, 100%);
 }
 
@@ -589,5 +592,11 @@ ul {
 
 }
 
+@media(min-width: 2000px) {
+  .products {
+    padding-top: 2em;
+    top: 85em;
+  }
+}
 
   
