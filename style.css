@@ -448,7 +448,7 @@ justify-content: space-between;
 .contact-grid {
   position: absolute;
   display: flex;
-  right: 0;
+  right: 5em;
   flex-direction: column;
   height: 50%;
   padding-right: 15em;
